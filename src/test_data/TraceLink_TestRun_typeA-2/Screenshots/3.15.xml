@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:CanonicalSNXDispositionAssignedEventType xmlns="urn:tracelink:mapper:sl:canonical:commontypes" xmlns:ns2="urn:tracelink:mapper:sl:canonical:serial_number_exchange">
+    <ns2:ControlFileHeader>
+        <FileSenderNumber>0853157007008</FileSenderNumber>
+        <FileReceiverNumber>0367546000001</FileReceiverNumber>
+        <FileControlNumber>1083562937711</FileControlNumber>
+        <FileDate>2018-12-19</FileDate>
+        <FileTime>15:38:08</FileTime>
+        <FileTransactionType>SNX_DISPOSITION_ASSIGNED</FileTransactionType>
+        <ServiceLinkId>SNX.0367546000001.0853157007008</ServiceLinkId>
+    </ns2:ControlFileHeader>
+    <ns2:MessageBody>
+        <ns2:CommissionEvent>
+            <ns2:CommissionEventDetail>
+                <EventDateTime>2018-12-19T15:32:09Z</EventDateTime>
+                <EventTimeZoneOffset>+00:00</EventTimeZoneOffset>
+                <SerialNumber companyPrefix="0367546" filterValue="2" format="AI(00)">00203675460000000357</SerialNumber>
+                <PackagingLevel>PL</PackagingLevel>
+                <BarcodeContent>(00)203675460000000357</BarcodeContent>
+            </ns2:CommissionEventDetail>
+            <ns2:CommissionCommonAttributes>
+                <EventLocation>0853157007.20.0</EventLocation>
+                <PlantLocationId>0367546</PlantLocationId>
+                <CompanyPrefix>0367546</CompanyPrefix>
+            </ns2:CommissionCommonAttributes>
+        </ns2:CommissionEvent>
+        <ns2:CommissionEvent>
+            <ns2:CommissionEventDetail>
+                <EventDateTime>2018-12-19T15:32:09Z</EventDateTime>
+                <EventTimeZoneOffset>+00:00</EventTimeZoneOffset>
+                <SerialNumber companyPrefix="0367546" filterValue="0" format="AI(01)+AI(21)">0100367546111127217732XGH5E32X</SerialNumber>
+                <PackagingLevel>EA</PackagingLevel>
+                <BarcodeContent>(01)00367546111127(21)7732XGH5E32X</BarcodeContent>
+            </ns2:CommissionEventDetail>
+            <ns2:CommissionCommonAttributes>
+                <EventLocation>0853157007.20.0</EventLocation>
+                <ns2:ItemDetail>
+                    <InternalMaterialCode>6754611112</InternalMaterialCode>
+                    <ItemCode type="GTIN-14">00367546111127</ItemCode>
+                    <CountryDrugCode type="US_NDC532">6754611112</CountryDrugCode>
+                    <LotNumber>DF1219A</LotNumber>
+                    <ExpirationDate>2018-12-31</ExpirationDate>
+                </ns2:ItemDetail>
+            </ns2:CommissionCommonAttributes>
+        </ns2:CommissionEvent>
+        <ns2:CommissionEvent>
+            <ns2:CommissionEventDetail>
+                <EventDateTime>2018-12-19T15:32:09Z</EventDateTime>
+                <EventTimeZoneOffset>+00:00</EventTimeZoneOffset>
+                <SerialNumber companyPrefix="0367546" filterValue="0" format="AI(01)+AI(21)">0100367546111141216H166KKFX61T</SerialNumber>
+                <PackagingLevel>EA</PackagingLevel>
+                <BarcodeContent>(01)00367546111141(21)6H166KKFX61T</BarcodeContent>
+            </ns2:CommissionEventDetail>
+            <ns2:CommissionCommonAttributes>
+                <EventLocation>0853157007.20.0</EventLocation>
+                <ns2:ItemDetail>
+                    <InternalMaterialCode>6754611114</InternalMaterialCode>
+                    <ItemCode type="GTIN-14">00367546111141</ItemCode>
+                    <CountryDrugCode type="US_NDC532">6754611114</CountryDrugCode>
+                    <LotNumber>DF1219A</LotNumber>
+                    <ExpirationDate>2018-12-31</ExpirationDate>
+                </ns2:ItemDetail>
+            </ns2:CommissionCommonAttributes>
+        </ns2:CommissionEvent>
+        <ns2:CommissionEvent>
+            <ns2:CommissionEventDetail>
+                <EventDateTime>2018-12-19T15:32:09Z</EventDateTime>
+                <EventTimeZoneOffset>+00:00</EventTimeZoneOffset>
+                <SerialNumber companyPrefix="0367546" filterValue="0" format="AI(01)+AI(21)">010036754621221321D3ES804WM736</SerialNumber>
+                <PackagingLevel>EA</PackagingLevel>
+                <BarcodeContent>(01)00367546212213(21)D3ES804WM736</BarcodeContent>
+            </ns2:CommissionEventDetail>
+            <ns2:CommissionCommonAttributes>
+                <EventLocation>0853157007.20.0</EventLocation>
+                <ns2:ItemDetail>
+                    <InternalMaterialCode>6754621221</InternalMaterialCode>
+                    <ItemCode type="GTIN-14">00367546212213</ItemCode>
+                    <CountryDrugCode type="US_NDC532">6754621221</CountryDrugCode>
+                    <LotNumber>DF1219A</LotNumber>
+                    <ExpirationDate>2018-12-31</ExpirationDate>
+                </ns2:ItemDetail>
+            </ns2:CommissionCommonAttributes>
+        </ns2:CommissionEvent>
+        <ns2:CommissionEvent>
+            <ns2:CommissionEventDetail>
+                <EventDateTime>2018-12-19T15:32:09Z</EventDateTime>
+                <EventTimeZoneOffset>+00:00</EventTimeZoneOffset>
+                <SerialNumber companyPrefix="0372453" filterValue="0" format="AI(01)+AI(21)">0100372453112129216M6T7WG0YZHA</SerialNumber>
+                <PackagingLevel>EA</PackagingLevel>
+                <BarcodeContent>(01)00372453112129(21)6M6T7WG0YZHA</BarcodeContent>
+            </ns2:CommissionEventDetail>
+            <ns2:CommissionCommonAttributes>
+                <EventLocation>0853157007.20.0</EventLocation>
+                <ns2:ItemDetail>
+                    <InternalMaterialCode>7245311212</InternalMaterialCode>
+                    <ItemCode type="GTIN-14">00372453112129</ItemCode>
+                    <CountryDrugCode type="US_NDC532">7245311212</CountryDrugCode>
+                    <LotNumber>DF1219A</LotNumber>
+                    <ExpirationDate>2018-12-31</ExpirationDate>
+                </ns2:ItemDetail>
+            </ns2:CommissionCommonAttributes>
+        </ns2:CommissionEvent>
+        <ns2:CommissionEvent>
+            <ns2:CommissionEventDetail>
+                <EventDateTime>2018-12-19T15:32:09Z</EventDateTime>
+                <EventTimeZoneOffset>+00:00</EventTimeZoneOffset>
+                <SerialNumber companyPrefix="0367546" filterValue="1" format="AI(01)+AI(21)">011036754611112421CA5XZG72KHEG</SerialNumber>
+                <PackagingLevel>CA</PackagingLevel>
+                <BarcodeContent>(01)10367546111124(21)CA5XZG72KHEG</BarcodeContent>
+            </ns2:CommissionEventDetail>
+            <ns2:CommissionCommonAttributes>
+                <EventLocation>0853157007.20.0</EventLocation>
+                <ns2:ItemDetail>
+                    <InternalMaterialCode>6754611112</InternalMaterialCode>
+                    <ItemCode type="GTIN-14">10367546111124</ItemCode>
+                    <CountryDrugCode type="US_NDC532">6754611112</CountryDrugCode>
+                    <LotNumber>DF1219A</LotNumber>
+                    <ExpirationDate>2018-12-31</ExpirationDate>
+                </ns2:ItemDetail>
+            </ns2:CommissionCommonAttributes>
+        </ns2:CommissionEvent>
+        <ns2:CommissionEvent>
+            <ns2:CommissionEventDetail>
+                <EventDateTime>2018-12-19T15:32:09Z</EventDateTime>
+                <EventTimeZoneOffset>+00:00</EventTimeZoneOffset>
+                <SerialNumber companyPrefix="0367546" filterValue="1" format="AI(01)+AI(21)">0110367546111148214S9G2MP3T388</SerialNumber>
+                <PackagingLevel>CA</PackagingLevel>
+                <BarcodeContent>(01)10367546111148(21)4S9G2MP3T388</BarcodeContent>
+            </ns2:CommissionEventDetail>
+            <ns2:CommissionCommonAttributes>
+                <EventLocation>0853157007.20.0</EventLocation>
+                <ns2:ItemDetail>
+                    <InternalMaterialCode>6754611114</InternalMaterialCode>
+                    <ItemCode type="GTIN-14">10367546111148</ItemCode>
+                    <CountryDrugCode type="US_NDC532">6754611114</CountryDrugCode>
+                    <LotNumber>DF1219A</LotNumber>
+                    <ExpirationDate>2018-12-31</ExpirationDate>
+                </ns2:ItemDetail>
+            </ns2:CommissionCommonAttributes>
+        </ns2:CommissionEvent>
+        <ns2:CommissionEvent>
+            <ns2:CommissionEventDetail>
+                <EventDateTime>2018-12-19T15:32:09Z</EventDateTime>
+                <EventTimeZoneOffset>+00:00</EventTimeZoneOffset>
+                <SerialNumber companyPrefix="0367546" filterValue="1" format="AI(01)+AI(21)">011036754621221021G5958SKY57Z6</SerialNumber>
+                <PackagingLevel>CA</PackagingLevel>
+                <BarcodeContent>(01)10367546212210(21)G5958SKY57Z6</BarcodeContent>
+            </ns2:CommissionEventDetail>
+            <ns2:CommissionCommonAttributes>
+                <EventLocation>0853157007.20.0</EventLocation>
+                <ns2:ItemDetail>
+                    <InternalMaterialCode>6754621221</InternalMaterialCode>
+                    <ItemCode type="GTIN-14">10367546212210</ItemCode>
+                    <CountryDrugCode type="US_NDC532">6754621221</CountryDrugCode>
+                    <LotNumber>DF1219A</LotNumber>
+                    <ExpirationDate>2018-12-31</ExpirationDate>
+                </ns2:ItemDetail>
+            </ns2:CommissionCommonAttributes>
+        </ns2:CommissionEvent>
+        <ns2:CommissionEvent>
+            <ns2:CommissionEventDetail>
+                <EventDateTime>2018-12-19T15:32:09Z</EventDateTime>
+                <EventTimeZoneOffset>+00:00</EventTimeZoneOffset>
+                <SerialNumber companyPrefix="0372453" filterValue="1" format="AI(01)+AI(21)">0110372453112126213YX7X6D17MRY</SerialNumber>
+                <PackagingLevel>CA</PackagingLevel>
+                <BarcodeContent>(01)10372453112126(21)3YX7X6D17MRY</BarcodeContent>
+            </ns2:CommissionEventDetail>
+            <ns2:CommissionCommonAttributes>
+                <EventLocation>0853157007.20.0</EventLocation>
+                <ns2:ItemDetail>
+                    <InternalMaterialCode>7245311212</InternalMaterialCode>
+                    <ItemCode type="GTIN-14">10372453112126</ItemCode>
+                    <CountryDrugCode type="US_NDC532">7245311212</CountryDrugCode>
+                    <LotNumber>DF1219A</LotNumber>
+                    <ExpirationDate>2018-12-31</ExpirationDate>
+                </ns2:ItemDetail>
+            </ns2:CommissionCommonAttributes>
+        </ns2:CommissionEvent>
+        <ns2:AggregationEvent>
+            <ns2:AggregationEventDetail>
+                <EventDateTime>2018-12-19T15:35:59Z</EventDateTime>
+                <EventTimeZoneOffset>+00:00</EventTimeZoneOffset>
+                <EventLocation>0853157007.20.0</EventLocation>
+                <ParentSerialNumber companyPrefix="0367546" filterValue="1" format="AI(01)+AI(21)">011036754611112421CA5XZG72KHEG</ParentSerialNumber>
+                <Quantity>1</Quantity>
+                <SerialNumberList>
+                    <SerialNumber companyPrefix="0367546" filterValue="0" format="AI(01)+AI(21)">0100367546111127217732XGH5E32X</SerialNumber>
+                </SerialNumberList>
+            </ns2:AggregationEventDetail>
+            <ns2:AggregationEventDetail>
+                <EventDateTime>2018-12-19T15:35:59Z</EventDateTime>
+                <EventTimeZoneOffset>+00:00</EventTimeZoneOffset>
+                <EventLocation>0853157007.20.0</EventLocation>
+                <ParentSerialNumber companyPrefix="0367546" filterValue="1" format="AI(01)+AI(21)">0110367546111148214S9G2MP3T388</ParentSerialNumber>
+                <Quantity>1</Quantity>
+                <SerialNumberList>
+                    <SerialNumber companyPrefix="0367546" filterValue="0" format="AI(01)+AI(21)">0100367546111141216H166KKFX61T</SerialNumber>
+                </SerialNumberList>
+            </ns2:AggregationEventDetail>
+            <ns2:AggregationEventDetail>
+                <EventDateTime>2018-12-19T15:35:59Z</EventDateTime>
+                <EventTimeZoneOffset>+00:00</EventTimeZoneOffset>
+                <EventLocation>0853157007.20.0</EventLocation>
+                <ParentSerialNumber companyPrefix="0367546" filterValue="1" format="AI(01)+AI(21)">011036754621221021G5958SKY57Z6</ParentSerialNumber>
+                <Quantity>1</Quantity>
+                <SerialNumberList>
+                    <SerialNumber companyPrefix="0367546" filterValue="0" format="AI(01)+AI(21)">010036754621221321D3ES804WM736</SerialNumber>
+                </SerialNumberList>
+            </ns2:AggregationEventDetail>
+            <ns2:AggregationEventDetail>
+                <EventDateTime>2018-12-19T15:35:59Z</EventDateTime>
+                <EventTimeZoneOffset>+00:00</EventTimeZoneOffset>
+                <EventLocation>0853157007.20.0</EventLocation>
+                <ParentSerialNumber companyPrefix="0372453" filterValue="1" format="AI(01)+AI(21)">0110372453112126213YX7X6D17MRY</ParentSerialNumber>
+                <Quantity>1</Quantity>
+                <SerialNumberList>
+                    <SerialNumber companyPrefix="0372453" filterValue="0" format="AI(01)+AI(21)">0100372453112129216M6T7WG0YZHA</SerialNumber>
+                </SerialNumberList>
+            </ns2:AggregationEventDetail>
+            <ns2:AggregationEventDetail>
+                <EventDateTime>2018-12-19T15:35:59Z</EventDateTime>
+                <EventTimeZoneOffset>+00:00</EventTimeZoneOffset>
+                <EventLocation>0853157007.20.0</EventLocation>
+                <ParentSerialNumber companyPrefix="0367546" filterValue="2" format="AI(00)">00203675460000000357</ParentSerialNumber>
+                <Quantity>4</Quantity>
+                <SerialNumberList>
+                    <SerialNumber companyPrefix="0367546" filterValue="1" format="AI(01)+AI(21)">011036754611112421CA5XZG72KHEG</SerialNumber>
+                    <SerialNumber companyPrefix="0367546" filterValue="1" format="AI(01)+AI(21)">0110367546111148214S9G2MP3T388</SerialNumber>
+                    <SerialNumber companyPrefix="0367546" filterValue="1" format="AI(01)+AI(21)">011036754621221021G5958SKY57Z6</SerialNumber>
+                    <SerialNumber companyPrefix="0372453" filterValue="1" format="AI(01)+AI(21)">0110372453112126213YX7X6D17MRY</SerialNumber>
+                </SerialNumberList>
+            </ns2:AggregationEventDetail>
+        </ns2:AggregationEvent>
+    </ns2:MessageBody>
+</ns2:CanonicalSNXDispositionAssignedEventType>
+

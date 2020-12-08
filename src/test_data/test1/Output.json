@@ -1,0 +1,505 @@
+{
+  "AODocs_TestRun_05_11_2020_17_00_08": {
+    "name": "AODocs_TestRun_05_11_2020_17_00_08",
+    "TestEnvironmentDetails": {
+      "Items": []
+    },
+    "TestExecutionStats": {
+      "Items": [
+        {
+          "Id": 1,
+          "Lable": "Execution Time Zone",
+          "Value": "(UTC-08:00) Pacific Time (US & Canada)"
+        },
+        {
+          "Id": 2,
+          "Lable": "Application Name",
+          "Value": "AODocs"
+        },
+        {
+          "Id": 3,
+          "Lable": "Application URL",
+          "Value": "https://aodocs.altirnao.com/?locale=en_US&aodocs-domain=xlm.aodocs.net"
+        },
+        {
+          "Id": 7,
+          "Lable": "Server IP",
+          "Value": "NA"
+        },
+        {
+          "Id": 8,
+          "Lable": "Plugins Used",
+          "Value": "Selenium,xUnit,C#.NET"
+        },
+        {
+          "Id": 9,
+          "Lable": "Login User ID",
+          "Value": "NA"
+        },
+        {
+          "Id": 10,
+          "Lable": "Execution Start Date/Time",
+          "Value": "2020-11-05 17:00:08:441"
+        },
+        {
+          "Id": 4,
+          "Lable": "Application Version",
+          "Value": " 53.10.1"
+        },
+        {
+          "Id": 11,
+          "Lable": "Execution End Date/Time",
+          "Value": "2020-11-05 17:28:20:072"
+        },
+        {
+          "Id": 13,
+          "Lable": "Execution Status",
+          "Value": "Completed"
+        },
+        {
+          "Id": 12,
+          "Lable": "Execution Duration",
+          "Value": "0 hours, 28 minutes, 11 seconds, 631 milliseconds"
+        },
+        {
+          "Id": 16,
+          "Lable": "Number of Total Tests",
+          "Value": "1"
+        },
+        {
+          "Id": 5,
+          "Lable": "Browser",
+          "Value": "chrome 86.0.4240.111"
+        },
+        {
+          "Id": 6,
+          "Lable": "OS Version",
+          "Value": "Microsoft Windows NT 10.0.17763.0"
+        },
+        {
+          "Id": 14,
+          "Lable": "Number of Tests Passed",
+          "Value": "1"
+        },
+        {
+          "Id": 15,
+          "Lable": "Number of Tests Failed",
+          "Value": "0"
+        }
+      ]
+    },
+    "TestExecutionSummary": {
+      "TestCaseStatusSummary": [
+        {
+          "TestCaseID": "1941",
+          "TestCaseTitle": "1941-Document Revisioning",
+          "TestCaseStatus": "Pass",
+          "TestCaseResults": "A clinical document can be revised, and a new version of the document is created."
+        }
+      ]
+    },
+    "TestCases": [
+      {
+        "Id": "1941",
+        "Name": "1941-Document Revisioning",
+        "Objective": "The objective is to verify that a clinical document can be revised, and a new version of the document is created. ",
+        "Acceptance": "A clinical document can be revised, and a new version of the document is created.",
+        "Status": "Pass",
+        "StartTime": "2020-11-05 17:00:19:485",
+        "EndTime": "2020-11-05 17:28:19:845",
+        "Duration": "00:360",
+        "SequenceDiagram": null,
+        "Steps": [
+          {
+            "Id": "1941.1",
+            "Number": "1",
+            "Title": "Given I am logged in to AODocs as 'Library Contributor' role with 'Test User Eight 8'",
+            "Description": "Log in as the Library Contributor: 'Test User Eight 8'.",
+            "ExpectedResult": "Login is successful for 'Test User Eight 8'.",
+            "ActualResult": "Login is successful for 'Test User Eight 8'.",
+            "IsError": false,
+            "ScreenShot": "1941.1.png",
+            "TimeStamp": "2020-11-05 17:01:14:180"
+          },
+          {
+            "Id": "1941.2",
+            "Number": "2",
+            "Title": "When I search for the library 'Galvani - Clinical library' and click on it",
+            "Description": "Search for the library 'Galvani - Clinical library' and click on it.",
+            "ExpectedResult": "User is navigated to 'Galvani - Clinical library' page.",
+            "ActualResult": "User is navigated to 'Galvani - Clinical library' page.",
+            "IsError": false,
+            "ScreenShot": "1941.2.png",
+            "TimeStamp": "2020-11-05 17:02:04:934"
+          },
+          {
+            "Id": "1941.3",
+            "Number": "3",
+            "Title": "When I create a clinical document with following information and store title 'DocumentName' and 'DocumentNo' and 'DocumentWorkFlowState':",
+            "Description": "Enter the following field values: Library name = Galvani - Clinical library; Document Class = Clinical documents; Title = xLMTestDoc01; Type = Data Management; Blinding = Blinded content; Study = GAL1040; Deliverable Milestone = End of study; Indication = Rheumatoid Arthritis; Regulatory compliance = Non GxP; Archival Date = Next Year’s Date; Clinical Manager = test-user-8@xlm.aodocs.net; Clinical Reviewers1 = test-user-6@xlm.aodocs.net; Clinical Reviewers2 = test-user-8@xlm.aodocs.net; Clinical Uploaders = test-user-5@xlm.aodocs.net; Blinded Viewer = test-user-9@xlm.aodocs.net; Archived viewer = test-user-6@xlm.aodocs.net.",
+            "ExpectedResult": "Document is in 'New clinical document' state.",
+            "ActualResult": "Document is in 'New clinical document' state.",
+            "IsError": false,
+            "ScreenShot": "1941.3.png",
+            "TimeStamp": "2020-11-05 17:02:43:947"
+          },
+          {
+            "Id": "1941.4",
+            "Number": "4",
+            "Title": "When I click on workflow and select 'Send for review' from drop-down list and current workflow state is 'New clinical document'",
+            "Description": "Navigate to the 'New clinical document' workflow state button and click on : 'Send for review'.",
+            "ExpectedResult": "'Perform work flow action' window is popped-up.",
+            "ActualResult": "'Perform work flow action' window is popped-up.",
+            "IsError": false,
+            "ScreenShot": "1941.4.png",
+            "TimeStamp": "2020-11-05 17:03:23:066"
+          },
+          {
+            "Id": "1941.5",
+            "Number": "5",
+            "Title": "When I enter the comment 'Test' and submit then verify the state changed as 'In-Review'",
+            "Description": "Leave a comment 'Test' and click on submit.",
+            "ExpectedResult": "The Clinical document is transitioned to 'In-Review' workflow state.",
+            "ActualResult": "The Clinical document is transitioned to 'In-Review' workflow state.",
+            "IsError": false,
+            "ScreenShot": "1941.5.png",
+            "TimeStamp": "2020-11-05 17:04:02:514"
+          },
+          {
+            "Id": "1941.6",
+            "Number": "6",
+            "Title": "When I click on workflow and select 'Archive' from drop-down list and click on submit with comment 'Test' and see 'Archived' workflow state",
+            "Description": "Click on the Workflow icon and select 'Archive'.Click on 'Submit' on the 'Perform work flow action' window. Verify that the workflow state is displayed as 'Archived'.",
+            "ExpectedResult": "The workflow state of the clinical document is displayed as 'Archived'.",
+            "ActualResult": "The workflow state of the clinical document is displayed as 'Archived'.",
+            "IsError": false,
+            "ScreenShot": "1941.6.png",
+            "TimeStamp": "2020-11-05 17:05:22:333"
+          },
+          {
+            "Id": "1941.7",
+            "Number": "7",
+            "Title": "When I am logged in as a 'Approver3' role with 'Test User 9'",
+            "Description": "Logout and Login as 'Test User 9'.",
+            "ExpectedResult": "Login is successful for 'Test User 9'.",
+            "ActualResult": "Login is successful for 'Test User 9'.",
+            "IsError": false,
+            "ScreenShot": "1941.7.png",
+            "TimeStamp": "2020-11-05 17:06:23:975"
+          },
+          {
+            "Id": "1941.8",
+            "Number": "8",
+            "Title": "When I search for the library 'Galvani - Clinical library' and click on it",
+            "Description": "Navigate to the 'Galvani - Clinical library'.",
+            "ExpectedResult": "'Galvani - Clinical library' page is displayed.",
+            "ActualResult": "'Galvani - Clinical library' page is displayed.",
+            "IsError": false,
+            "ScreenShot": "1941.8.png",
+            "TimeStamp": "2020-11-05 17:07:13:071"
+          },
+          {
+            "Id": "1941.9",
+            "Number": "9",
+            "Title": "When I select 'Archived clinical documents' from the View navigation panel",
+            "Description": "Select 'Archived clinical documents' from the views navigation panel.",
+            "ExpectedResult": "No documents are displayed under the 'Archived clinical documents' view.",
+            "ActualResult": "No documents are displayed under the 'Archived clinical documents' view.",
+            "IsError": false,
+            "ScreenShot": "1941.9.png",
+            "TimeStamp": "2020-11-05 17:07:29:495"
+          },
+          {
+            "Id": "1941.10",
+            "Number": "10",
+            "Title": "When I am logged in as a 'Archived viewer' role with 'Test User 6'",
+            "Description": "Logout and Login as the 'Archived viewer' Test User 6.",
+            "ExpectedResult": "Login is successful for 'Test User 6'.",
+            "ActualResult": "Login is successful for 'Test User 6'.",
+            "IsError": false,
+            "ScreenShot": "1941.10.png",
+            "TimeStamp": "2020-11-05 17:08:31:414"
+          },
+          {
+            "Id": "1941.11",
+            "Number": "11",
+            "Title": "When I search for the library 'Galvani - Clinical library' and click on it",
+            "Description": "Navigate to the 'Galvani - Clinical library'.",
+            "ExpectedResult": "'Galvani - Clinical library' page is displayed.",
+            "ActualResult": "'Galvani - Clinical library' page is displayed.",
+            "IsError": false,
+            "ScreenShot": "1941.11.png",
+            "TimeStamp": "2020-11-05 17:09:20:485"
+          },
+          {
+            "Id": "1941.12",
+            "Number": "12",
+            "Title": "When I select 'Archived clinical documents' from the Views navigation panel",
+            "Description": "Select 'Archived clinical documents' from the views navigation panel.Verify that a list of Archived Clinical documents is displayed.",
+            "ExpectedResult": "A list of Archived Clinical documents is displayed  under the 'Archived clinical documents' view.",
+            "ActualResult": "A list of Archived Clinical documents is displayed  under the 'Archived clinical documents' view.",
+            "IsError": false,
+            "ScreenShot": "1941.12.png",
+            "TimeStamp": "2020-11-05 17:09:26:748"
+          },
+          {
+            "Id": "1941.13",
+            "Number": "13",
+            "Title": "When I click on the document 'DocumentTitle'",
+            "Description": "Click on the document '076 - xLMTestDoc01'.",
+            "ExpectedResult": "The document '076 - xLMTestDoc01' is displayed.",
+            "ActualResult": "The document '076 - xLMTestDoc01' is displayed.",
+            "IsError": false,
+            "ScreenShot": "1941.13.png",
+            "TimeStamp": "2020-11-05 17:10:02:374"
+          },
+          {
+            "Id": "1941.14",
+            "Number": "14",
+            "Title": "When I am logged in as a 'Library Admin' role with 'Test User 2'",
+            "Description": "Logout and Login as the 'Test User 2'.",
+            "ExpectedResult": "Login is successful for 'Test User 2'.",
+            "ActualResult": "Login is successful for 'Test User 2'.",
+            "IsError": false,
+            "ScreenShot": "1941.14.png",
+            "TimeStamp": "2020-11-05 17:11:05:894"
+          },
+          {
+            "Id": "1941.15",
+            "Number": "15",
+            "Title": "When I search for the library 'Galvani - Clinical library' and click on it",
+            "Description": "Navigate to the 'Galvani - Clinical library'.",
+            "ExpectedResult": "'Galvani - Clinical library' page is displayed.",
+            "ActualResult": "'Galvani - Clinical library' page is displayed.",
+            "IsError": false,
+            "ScreenShot": "1941.15.png",
+            "TimeStamp": "2020-11-05 17:11:54:232"
+          },
+          {
+            "Id": "1941.16",
+            "Number": "16",
+            "Title": "When I select 'Archived clinical documents' from the Views navigation panel",
+            "Description": "Select 'Archived clinical documents' from the views navigation panel.",
+            "ExpectedResult": "'Archived clinical documents' page is displayed.",
+            "ActualResult": "'Archived clinical documents' page is displayed.",
+            "IsError": false,
+            "ScreenShot": "1941.16.png",
+            "TimeStamp": "2020-11-05 17:12:00:556"
+          },
+          {
+            "Id": "1941.17",
+            "Number": "17",
+            "Title": "When I click on the document 'DocumentTitle'",
+            "Description": "Select '076 - xLMTestDoc01' document.",
+            "ExpectedResult": "'076 - xLMTestDoc01' page is displayed.",
+            "ActualResult": "'076 - xLMTestDoc01' page is displayed.",
+            "IsError": false,
+            "ScreenShot": "1941.17.png",
+            "TimeStamp": "2020-11-05 17:12:34:897"
+          },
+          {
+            "Id": "1941.18",
+            "Number": "18",
+            "Title": "When I click on more action and select 'Administrator actions' and choose a workflow state as 'Approved - Blinded content'",
+            "Description": "Using 'Administrator actions' move the document to 'Approved - Blinded content' workflow state.",
+            "ExpectedResult": "The document is in 'Approved - Blinded content' work flow state.",
+            "ActualResult": "The document is in 'Approved - Blinded content' work flow state.",
+            "IsError": false,
+            "ScreenShot": "1941.18.png",
+            "TimeStamp": "2020-11-05 17:13:53:520"
+          },
+          {
+            "Id": "1941.19",
+            "Number": "19",
+            "Title": "When I am logged in as a 'Library Contributor' role with 'Test User 8'",
+            "Description": "Logout and Login as the 'Test User 8'.",
+            "ExpectedResult": "Login is successful for 'Test User 8'.",
+            "ActualResult": "Login is successful for 'Test User 8'.",
+            "IsError": false,
+            "ScreenShot": "1941.19.png",
+            "TimeStamp": "2020-11-05 17:15:05:071"
+          },
+          {
+            "Id": "1941.20",
+            "Number": "20",
+            "Title": "When I search for the library 'Galvani - Clinical library' and click on it",
+            "Description": "Navigate to the 'Galvani - Clinical library'.",
+            "ExpectedResult": "'Galvani - Clinical library' page is displayed.",
+            "ActualResult": "'Galvani - Clinical library' page is displayed.",
+            "IsError": false,
+            "ScreenShot": "1941.20.png",
+            "TimeStamp": "2020-11-05 17:15:54:332"
+          },
+          {
+            "Id": "1941.21",
+            "Number": "21",
+            "Title": "When I select 'All clinical documents' from the Views navigation panel",
+            "Description": "Select 'All clinical documents' from the views navigation panel.",
+            "ExpectedResult": "'All clinical documents' page is displayed.",
+            "ActualResult": "'All clinical documents' page is displayed.",
+            "IsError": false,
+            "ScreenShot": "1941.21.png",
+            "TimeStamp": "2020-11-05 17:16:00:781"
+          },
+          {
+            "Id": "1941.22",
+            "Number": "22",
+            "Title": "When I click on the document 'DocumentTitle'",
+            "Description": "Select '076 - xLMTestDoc01' document.",
+            "ExpectedResult": "'076 - xLMTestDoc01' page is displayed.",
+            "ActualResult": "'076 - xLMTestDoc01' page is displayed.",
+            "IsError": false,
+            "ScreenShot": "1941.22.png",
+            "TimeStamp": "2020-11-05 17:16:35:323"
+          },
+          {
+            "Id": "1941.23",
+            "Number": "23",
+            "Title": "When I click on workflow and select 'Create a new version' from drop-down list and click on submit with comment 'Test' and see 'Clinical document under revision' workflow state",
+            "Description": "Click on the Workflow icon and select 'Create a new version'.Click on 'Submit' on the 'Perform work flow action' window. Verify that the workflow state is displayed as 'Clinical document under revision'.",
+            "ExpectedResult": "A new Daft version of the document is created. The workflow state of the clinical document is displayed as 'Clinical document under revision'.",
+            "ActualResult": "A new Daft version of the document is created. The workflow state of the clinical document is displayed as 'Clinical document under revision'.",
+            "IsError": false,
+            "ScreenShot": "1941.23.png",
+            "TimeStamp": "2020-11-05 17:17:55:535"
+          },
+          {
+            "Id": "1941.24",
+            "Number": "24",
+            "Title": "When I click on workflow and select 'Send for review' from drop-down list and click on submit with comment 'Test' and see 'New version in-review' workflow state",
+            "Description": "Click on the Workflow icon and select 'Send for review'.Click on 'Submit' on the 'Perform work flow action' window. Verify that the workflow state is displayed as 'New version in-review'.",
+            "ExpectedResult": "The workflow state of the clinical document is displayed as 'New version in-review'.",
+            "ActualResult": "The workflow state of the clinical document is displayed as 'New version in-review'.",
+            "IsError": false,
+            "ScreenShot": "1941.24.png",
+            "TimeStamp": "2020-11-05 17:19:15:565"
+          },
+          {
+            "Id": "1941.25",
+            "Number": "25",
+            "Title": "When I click on workflow and select 'Reject' from drop-down list and click on submit with comment 'Test' and see 'New version under modification' workflow state",
+            "Description": "Click on the Workflow icon and select 'Reject'.Click on 'Submit' on the 'Perform work flow action' window. Verify that the workflow state is displayed as 'New version under modification'.",
+            "ExpectedResult": "The workflow state of the clinical document is displayed as 'New version under modification'.",
+            "ActualResult": "The workflow state of the clinical document is displayed as 'New version under modification'.",
+            "IsError": false,
+            "ScreenShot": "1941.25.png",
+            "TimeStamp": "2020-11-05 17:20:35:697"
+          },
+          {
+            "Id": "1941.26",
+            "Number": "26",
+            "Title": "When I click on workflow and select 'Send for review' from drop-down list and click on submit with comment 'Test' and see 'New version in-review' workflow state",
+            "Description": "Click on the Workflow icon and select 'Send for review'.Click on 'Submit' on the 'Perform work flow action' window. Verify that the workflow state is displayed as 'New version in-review'.",
+            "ExpectedResult": "The workflow state of the clinical document is displayed as 'New version in-review'.",
+            "ActualResult": "The workflow state of the clinical document is displayed as 'New version in-review'.",
+            "IsError": false,
+            "ScreenShot": "1941.26.png",
+            "TimeStamp": "2020-11-05 17:21:56:307"
+          },
+          {
+            "Id": "1941.27",
+            "Number": "27",
+            "Title": "When I click on workflow and select 'Approve' from drop-down list and click on submit with comment 'Test' and see 'Approved - Blinded content' workflow state",
+            "Description": "Click on the Workflow icon and select 'Approve'.Click on 'Submit' on the 'Perform work flow action' window. Verify that the workflow state is displayed as 'Approved - Blinded content'.",
+            "ExpectedResult": "The workflow state of the clinical document is displayed as 'Approved - Blinded content'.",
+            "ActualResult": "The workflow state of the clinical document is displayed as 'Approved - Blinded content'.",
+            "IsError": false,
+            "ScreenShot": "1941.27.png",
+            "TimeStamp": "2020-11-05 17:23:17:516"
+          },
+          {
+            "Id": "1941.28",
+            "Number": "28",
+            "Title": "When I click on versions icon on the bottom left of the screen",
+            "Description": "Click on the 'Versions' icon on the bottom left of the screen.",
+            "ExpectedResult": "Document Versions are displayed.",
+            "ActualResult": "Document Versions are displayed.",
+            "IsError": false,
+            "ScreenShot": "1941.28.png",
+            "TimeStamp": "2020-11-05 17:23:34:790"
+          },
+          {
+            "Id": "1941.29",
+            "Number": "29",
+            "Title": "When I verify that the current version is displayed as version 2 and the version 1 under previous version",
+            "Description": "Verify that the current version is displayed as Version 2 and the Version 1 is listed under 'Previous versions'.",
+            "ExpectedResult": "The current version is displayed as Version 2 and the Version 1 is listed under 'Previous versions'.",
+            "ActualResult": "The current version is displayed as Version 2 and the Version 1 is listed under 'Previous versions'.",
+            "IsError": false,
+            "ScreenShot": "1941.29.png",
+            "TimeStamp": "2020-11-05 17:23:51:598"
+          },
+          {
+            "Id": "1941.30",
+            "Number": "30",
+            "Title": "When I am logged in as a 'Archived viewer' role with 'Test User 6'",
+            "Description": "Logout and Login as the 'Test User 6'.",
+            "ExpectedResult": "Login is successful for 'Test User 6'.",
+            "ActualResult": "Login is successful for 'Test User 6'.",
+            "IsError": false,
+            "ScreenShot": "1941.30.png",
+            "TimeStamp": "2020-11-05 17:25:03:195"
+          },
+          {
+            "Id": "1941.31",
+            "Number": "31",
+            "Title": "When I search for the library 'Galvani - Clinical library' and click on it",
+            "Description": "Navigate to the 'Galvani - Clinical library'.",
+            "ExpectedResult": "'Galvani - Clinical library' page is displayed.",
+            "ActualResult": "'Galvani - Clinical library' page is displayed.",
+            "IsError": false,
+            "ScreenShot": "1941.31.png",
+            "TimeStamp": "2020-11-05 17:25:52:506"
+          },
+          {
+            "Id": "1941.32",
+            "Number": "32",
+            "Title": "When I choose 'All Clinical Documents -> Approved – Blinded Content' from the list and document is 'DocumentTitle'",
+            "Description": "Select 'All Clinical Documents -> Approved – Blinded Content' from the views navigation panel.Verify that the '076 - xLMTestDoc01' is not displayed.",
+            "ExpectedResult": "The document '076 - xLMTestDoc01' is not displayed.",
+            "ActualResult": "The document '076 - xLMTestDoc01' is not displayed.",
+            "IsError": false,
+            "ScreenShot": "1941.32.png",
+            "TimeStamp": "2020-11-05 17:26:08:453"
+          },
+          {
+            "Id": "1941.33",
+            "Number": "33",
+            "Title": "When I am logged in as a 'Approver3' role with 'Test User 9'",
+            "Description": "Logout and Login as the 'Test User 9'.",
+            "ExpectedResult": "Login is successful for 'Test User 9'.",
+            "ActualResult": "Login is successful for 'Test User 9'.",
+            "IsError": false,
+            "ScreenShot": "1941.33.png",
+            "TimeStamp": "2020-11-05 17:27:19:965"
+          },
+          {
+            "Id": "1941.34",
+            "Number": "34",
+            "Title": "When I search for the library 'Galvani - Clinical library' and click on it",
+            "Description": "Navigate to the 'Galvani - Clinical library'.",
+            "ExpectedResult": "'Galvani - Clinical library' page is displayed.",
+            "ActualResult": "'Galvani - Clinical library' page is displayed.",
+            "IsError": false,
+            "ScreenShot": "1941.34.png",
+            "TimeStamp": "2020-11-05 17:28:10:042"
+          },
+          {
+            "Id": "1941.35",
+            "Number": "35",
+            "Title": "When I select 'All Clinical Documents -> Approved – Blinded Content' from the list and document is 'DocumentTitle'",
+            "Description": "Select 'All Clinical Documents -> Approved – Blinded Content' from the views navigation panel.Verify that the '076 - xLMTestDoc01' is displayed.",
+            "ExpectedResult": "The document '076 - xLMTestDoc01' is displayed.",
+            "ActualResult": "The document '076 - xLMTestDoc01' is displayed.",
+            "IsError": false,
+            "ScreenShot": "1941.35.png",
+            "TimeStamp": "2020-11-05 17:28:16:427"
+          }
+        ]
+      }
+    ],
+    "AccessRequestId": null,
+    "RITMId": null,
+    "TaskId": null
+  }
+}

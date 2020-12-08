@@ -1,0 +1,85 @@
+{
+  "header": "Test Protocol Execution Report \n Clinical Library (Part 2) \n AOLife Galvani Library\n",
+  "headerimage": "/Galvanilogo.png",
+  "footer": "Confidential - not for redistribution",
+  "filename": "SampleExecution",
+  "docnumber": "Document #: XQMS-2718",
+  "revnumber": "Rev #: 00",
+  "projectname": "Galvani",
+  "projectid": "3",
+  "watermark": {
+    "waterMarkText": "",
+    "waterMarkTextxPosition": "500",
+    "waterMarkTextyPosition": "300"
+  },
+  "signature_table": [
+    {
+      "approver": "",
+      "image": "/xLM-Logo.png"
+    },
+    {
+      "approver": "",
+      "image": "/Galvanilogo.png"
+    }
+  ],
+  "execution_approvals": [
+    "Ensure the test scripts have been executed.",
+    "Ensure that the documented evidence has been correctly produced for all applicable test steps.",
+    "Ensure the exceptions/incidents have been documented to address test failures (if any).",
+    "Confirm the output (Pass / Fail status) of the test based on documented evidence, if applicable.",
+    "Completed by xLM Quality and Customer Quality who have sufficient knowledge to evaluate and verify the test execution."
+  ],
+  "model_details": {
+    "Model Name": "xLM For AOLife Galvani Library",
+    "Model Version": "1.0.0"
+  },
+  "execution_details": {
+    "Time Zone": "(UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi",
+    "Application URL": "https://accounts.google.com",
+    "xLM Platform Version": "2.0",
+    "Browser": "Chrome Version 77.0.3865.90",
+    "Plugins used": "Selenium, xUnit, C#.NET",
+    "Login User ID": "sandeep@continuousvalidation.com"
+  },
+  "execution_stats": {
+    "Execution Start Date/Time": "08-03-2019 11:20:20",
+    "Execution End Date/Time": "05-03-2019 17:58:35",
+    "Execution Duration": "0:12:8",
+    "Execution Status": "Completed"
+  },
+  "testsummary": {
+    "testcasesummary": [
+      {
+        "test_case_title": "Serial Number Provisioning Verification",
+        "test_case_status": "Pass",
+        "test_case_results": "Downloaded the transactions file and verified serial numbers that were provisioned successfully."
+      },
+      {
+        "test_case_title": "Allocation Reports Verification",
+        "test_case_status": "Pass",
+        "test_case_results": "Verified the Allocation Reports exist for a randomly selected packaging code."
+      },
+      {
+        "test_case_title": "Disposition Assignment Transaction Verification",
+        "test_case_status": "Pass",
+        "test_case_results": "Verified disposition assignment transactions sent by PPS successfully."
+      },
+      {
+        "test_case_title": "Disposition Assignment File Verification",
+        "test_case_status": "Pass",
+        "test_case_results": "Downloaded disposition transactions file and verified serial numbers successfully."
+      },
+      {
+        "test_case_title": "Serial Number Status Verification",
+        "test_case_status": "Pass",
+        "test_case_results": "Serial number and lot statuses were verified successfully."
+      },
+      {
+        "test_case_title": "SOM Sales Transaction Verification",
+        "test_case_status": "Pass",
+        "test_case_results": "Sales transaction exists in the SOM module and is verified successfully."
+      }
+    ],
+    "testsequencechart": "/TemplateImages/testsequencegraph.png"
+  }
+}
