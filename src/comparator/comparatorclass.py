@@ -22,7 +22,8 @@ CURR_TIME = (datetime.datetime.now()).strftime("%Y-%m-%d %H:%M:%S")
 PATH = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.abspath(os.path.join(PATH, os.pardir))
 
-
+PROJECT1 = 'test3'
+PROJECT2 = 'test4'
 
 
 
@@ -104,7 +105,12 @@ class Test_Comparator(object):
         
         
         for image1, image2 in zip(sorted(os.listdir(self.imgpath1)), sorted(os.listdir(self.imgpath2))):
-            print(self.imgpath1+image1, self.imgpath2+image2)
+            
+            #print(self.imgpath1+image1, self.imgpath2+image2)
+            
+            
+            if image1 == '.DS_Store' or image2 == '.DS_Store':
+                continue
    
             img1 = cv2.imread(self.imgpath1+image1)
             img2 = cv2.imread(self.imgpath2+image2)
@@ -142,8 +148,8 @@ def main():
     path1 = os.path.join(SRC, 'test_data/test1/Output.json')
     path2 = os.path.join(SRC,'test_data/test2/Output.json')  
       
-    img1 = os.path.join(SRC, 'test_data/TraceLink_TestRun_typeA-1/Screenshots/')
-    img2 = os.path.join(SRC, 'test_data/TraceLink_TestRun_typeA-1/Screenshots/')
+    img1 = os.path.join(SRC, 'test_data/'+PROJECT1+'/Screenshots/')
+    img2 = os.path.join(SRC, 'test_data/'+PROJECT2+'/Screenshots/')
     
     
    #Create instance of Test_Comparator class and run it
