@@ -17,6 +17,7 @@ import numpy as np
 import tesserocr
 from utilities.logging_service import LoggingService
 from utilities.comparator_utils import Utils
+from SIFT.SIFT_utils import SIFT
 
 
 CURR_TIME = (datetime.datetime.now()).strftime("%Y-%m-%d %H:%M:%S")
@@ -42,6 +43,8 @@ class Test_Comparator(object):
         self.imgpath1 = img1
         self.imgpath2 = img2
         self.utils = Utils()
+        self.image_name = "book1"
+        self.sift = SIFT(self.image_name)
                 
     def TestExecutionStats(self, value1,value2):
         for (k1,v1),(k2,v2) in zip(value1.items(), value2.items()): #will only loop once
@@ -124,9 +127,12 @@ class Test_Comparator(object):
             
             #self.utils.matchTemplate(img1, img2, image1, SRC)
             #self.utils.tesserOCR(path1, path2)
-            self.utils.compareImages(img1, img2, image1, SRC)
+            #self.utils.compareImages(img1, img2, image1, SRC)
             #self.utils.extract_diff(img1,img2, image1, PATH)
             
+            self.sift.run_with_resizing(path1, path2)
+            
+            break
             
         
         
