@@ -14,6 +14,7 @@ import cv2
 import datetime
 import logging
 import numpy as np
+import tesserocr
 from utilities.logging_service import LoggingService
 from utilities.comparator_utils import Utils
 
@@ -22,8 +23,8 @@ CURR_TIME = (datetime.datetime.now()).strftime("%Y-%m-%d %H:%M:%S")
 PATH = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.abspath(os.path.join(PATH, os.pardir))
 
-PROJECT1 = 'test3'
-PROJECT2 = 'test4'
+PROJECT1 = 'Tracelink_1'
+PROJECT2 = 'Tracelink_2'
 
 
 
@@ -111,12 +112,22 @@ class Test_Comparator(object):
             
             if image1 == '.DS_Store' or image2 == '.DS_Store':
                 continue
-   
-            img1 = cv2.imread(self.imgpath1+image1)
-            img2 = cv2.imread(self.imgpath2+image2)
             
+            path1 = self.imgpath1+image1
+            path2 = self.imgpath2+image2
+            img1 = cv2.imread(path1)
+            img2 = cv2.imread(path2)
+            
+            #self.utils.ORB(img1, img2, image1, SRC)
+            
+            #self.utils.SIFT(img1, img2, image1, SRC)
+            
+            #self.utils.matchTemplate(img1, img2, image1, SRC)
+            #self.utils.tesserOCR(path1, path2)
             self.utils.compareImages(img1, img2, image1, SRC)
             #self.utils.extract_diff(img1,img2, image1, PATH)
+            
+            
         
         
         for (k1,v1),(k2,v2) in zip(test1.items(), test2.items()):
