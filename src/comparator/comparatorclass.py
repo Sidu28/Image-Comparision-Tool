@@ -11,6 +11,7 @@ sys.path.append(os.path.join(os.path.abspath(os.path.dirname(__file__)), '..')) 
 
 import json
 import cv2
+import csv
 import datetime
 import logging
 import numpy as np
@@ -106,29 +107,34 @@ class Test_Comparator(object):
         test1 = (json.load( open(self.path1)))[key1]
         test2 = (json.load( open(self.path2)))[key2]
         
-        
-        for image1, image2 in zip(sorted(os.listdir(self.imgpath1)), sorted(os.listdir(self.imgpath2))):
-            
-            #print(self.imgpath1+image1, self.imgpath2+image2)
-            
-            
-            if image1 == '.DS_Store' or image2 == '.DS_Store':
-                continue
-            
-            path1 = self.imgpath1+image1
-            path2 = self.imgpath2+image2
-            img1 = cv2.imread(path1)
-            img2 = cv2.imread(path2)
-            
-            #These partial paths are the path from within the test_data directory onwards (see os.relpath())
-            #We use these to help identify which images are being used in the SIFT.  
-            partial_path1 = os.path.relpath(path1, SRC+'/test_data')
-            partial_path2 = os.path.relpath(path2, SRC+'/test_data')
-            
-            
-            sift = SIFT(partial_path1, partial_path2)
-            sift.run(path1, path2)
-            
+        with open(SRC+'/SIFT/final reports/results_'+CURR_TIME+'.csv','a',newline='') as f:
+            writer=csv.writer(f)
+            #writer.writerow(["Image Name","SCORE", "number of matches", "number keypoints 1","number of keypoints 1", "number of descriptors 1", "number of descriptors 2"])
+            writer.writerow(["Image Name","Score w/ resizing 1", "Score w/o resizing", "matches w/resizing", "matches w/o resizing"])
+       
+            for image1, image2 in zip(sorted(os.listdir(self.imgpath1)), sorted(os.listdir(self.imgpath2))):
+                
+                #print(self.imgpath1+image1, self.imgpath2+image2)
+                
+                
+                if image1 == '.DS_Store' or image2 == '.DS_Store':
+                    continue
+                
+                path1 = self.imgpath1+image1
+                path2 = self.imgpath2+image2
+                img1 = cv2.imread(path1)
+                img2 = cv2.imread(path2)
+                
+                #These partial paths are the path from within the test_data directory onwards (see os.relpath())
+                #We use these to help identify which images are being used in the SIFT.  
+                partial_path1 = os.path.relpath(path1, SRC+'/test_data')
+                partial_path2 = os.path.relpath(path2, SRC+'/test_data')
+                
+                
+                sift = SIFT(partial_path1, partial_path2)
+                
+                sift.run(path1, path2, writer)
+                
             
             
         
