@@ -24,8 +24,8 @@ CURR_TIME = (datetime.datetime.now()).strftime("%Y-%m-%d %H:%M:%S")
 PATH = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.abspath(os.path.join(PATH, os.pardir))
 
-PROJECT1 = 'book1'
-PROJECT2 = 'book2'
+PROJECT1 = 'test1'
+PROJECT2 = 'test2'
 
 
 
@@ -130,7 +130,7 @@ class Test_Comparator(object):
             sift.run(path1, path2)
             
             
-            break
+            
         
             #self.utils.ORB(img1, img2, image1, SRC)
             #self.utils.SIFT(img1, img2, image1, SRC)
