@@ -24,8 +24,8 @@ CURR_TIME = (datetime.datetime.now()).strftime("%Y-%m-%d %H:%M:%S")
 PATH = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.abspath(os.path.join(PATH, os.pardir))
 
-PROJECT1 = 'Tracelink_1'
-PROJECT2 = 'Tracelink_2'
+PROJECT1 = 'book1'
+PROJECT2 = 'book2'
 
 
 
@@ -43,8 +43,7 @@ class Test_Comparator(object):
         self.imgpath1 = img1
         self.imgpath2 = img2
         self.utils = Utils()
-        self.image_name = "book1"
-        self.sift = SIFT(self.image_name)
+    
                 
     def TestExecutionStats(self, value1,value2):
         for (k1,v1),(k2,v2) in zip(value1.items(), value2.items()): #will only loop once
@@ -121,18 +120,24 @@ class Test_Comparator(object):
             img1 = cv2.imread(path1)
             img2 = cv2.imread(path2)
             
+            #These partial paths are the path from within the test_data directory onwards (see os.relpath())
+            #We use these to help identify which images are being used in the SIFT.  
+            partial_path1 = os.path.relpath(path1, SRC+'/test_data')
+            partial_path2 = os.path.relpath(path2, SRC+'/test_data')
+            
+            
+            sift = SIFT(partial_path1, partial_path2)
+            sift.run(path1, path2)
+            
+            
+            break
+        
             #self.utils.ORB(img1, img2, image1, SRC)
-            
             #self.utils.SIFT(img1, img2, image1, SRC)
-            
             #self.utils.matchTemplate(img1, img2, image1, SRC)
             #self.utils.tesserOCR(path1, path2)
             #self.utils.compareImages(img1, img2, image1, SRC)
             #self.utils.extract_diff(img1,img2, image1, PATH)
-            
-            self.sift.run_with_resizing(path1, path2)
-            
-            break
             
         
         
