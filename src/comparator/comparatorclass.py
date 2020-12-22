@@ -110,7 +110,7 @@ class Test_Comparator(object):
         with open(SRC+'/SIFT/final reports/results_'+CURR_TIME+'.csv','a',newline='') as f:
             writer=csv.writer(f)
             #writer.writerow(["Image Name","SCORE", "number of matches", "number keypoints 1","number of keypoints 1", "number of descriptors 1", "number of descriptors 2"])
-            writer.writerow(["Image Name","Score w/ resizing 1", "Score w/o resizing", "matches w/resizing", "matches w/o resizing"])
+            writer.writerow(["Image Name","Score w/ resizing 1", "Score w/o resizing"])
        
             for image1, image2 in zip(sorted(os.listdir(self.imgpath1)), sorted(os.listdir(self.imgpath2))):
                 
